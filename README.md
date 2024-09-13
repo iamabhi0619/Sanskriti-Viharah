@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Tourist & Local Guide App connects tourists with local guides, offering an affordable and comprehensive way to explore cultural heritage. Available as a web, Android, and iOS application, it highlights the cultural richness of various regions and helps tourists find local guides for an enriching experience.
+The Tourist & Local Guide App connects tourists with local guides, offering an affordable and comprehensive way to explore cultural heritage. Available as a web application, Android app, and iOS app, it highlights the cultural richness of various regions and helps tourists find local guides for an enriching experience.
 
 ## Features
 
@@ -17,10 +17,11 @@ The Tourist & Local Guide App connects tourists with local guides, offering an a
 ## Technology Stack
 
 - **Frontend**:
-  - Built with React for the web and React Native for Android and iOS.
-  
+  - **Web**: Built with React. Located in the `web` folder.
+  - **Mobile**: Built with React Native and Expo. Located in the `App` folder.
+
 - **Backend**:
-  - Powered by Node.js and Express.js, handling user requests and session management.
+  - Powered by Node.js and Express.js. Located in the `api` folder.
   
 - **Database**:
   - MongoDB stores user data, guide profiles, cultural highlights, and tourist spot details.
@@ -42,5 +43,5 @@ The Tourist & Local Guide App connects tourists with local guides, offering an a
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/YourUsername/YourRepositoryName.git](https://github.com/ItachiUchiha7777/Sanskriti-Viharah.git
+   git clone https://github.com/ItachiUchiha7777/Sanskriti-Viharah.git
    cd Sanskriti-Viharah

@@ -4,6 +4,14 @@
 
 The Tourist & Local Guide App connects tourists with local guides, offering an affordable and comprehensive way to explore cultural heritage. Available as a web application, Android app, and iOS app, it highlights the cultural richness of various regions and helps tourists find local guides for an enriching experience.
 
+
+
+![Installation Guide](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnNwcTlzeXRhMzRxZ2xuajNnNmI3bnd0bXk2YnZsMm4zZ3Y2c2FldiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fpuYdgaQs9NBXBO7gk/giphy.gif)
+
+
+![Installation Guide](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjlncHF0MGx4MmJkN2F0b3BveGJzbjh2YWp1dmNrNDhmN3AycmQ1ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/bqsCetFEMbgveCnXK1/giphy.gif)
+
+
 ## Features
 
 - **User Authentication**: Secure login using Google Auth.
@@ -45,3 +53,5 @@ The Tourist & Local Guide App connects tourists with local guides, offering an a
    ```bash
    git clone https://github.com/ItachiUchiha7777/Sanskriti-Viharah.git
    cd Sanskriti-Viharah
+
+

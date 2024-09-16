@@ -7,6 +7,7 @@ app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
+  
 });
 
 app.post("/data", (req, res) => {

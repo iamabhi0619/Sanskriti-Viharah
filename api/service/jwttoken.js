@@ -8,6 +8,6 @@ const generateToken = (data) => {
     email: data.email,
     role: data.role,
   };
-  return jwt.sign(paylode, process.env.SCRETKEYJWT, { expiresIn: "24hrs" });
+  return jwt.sign(paylode, "1234567", { expiresIn: "24hrs" });
 };
 module.exports = { generateToken };

@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 async function main() {
   await mongoose.connect(
-    process.env.MONGODB_URI
+    "mongodb+srv://rohitgusain792:GGj92TxsB1IzJGYV@cluster0.elkbh.mongodb.net/sanskriti"
   );
   console.log("Database connected...!");
 }

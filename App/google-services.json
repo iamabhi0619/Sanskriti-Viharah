@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "234664040669",
+    "project_id": "sanskriti-viharah",
+    "storage_bucket": "sanskriti-viharah.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234664040669:android:9af4835340a8a8c5152334",
+        "android_client_info": {
+          "package_name": "com.vidyutandroid.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARtGAt7sFVrgY-WeIy0S3ut6T2bpVNM-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

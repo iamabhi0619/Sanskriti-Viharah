@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, Alert } from 'react-native';
 import { TextInput, Button, Text, Title, IconButton } from 'react-native-paper';
-import { v4 as uuidv4 } from 'react-native-uuid'; // Correct import for uuidv4
 
 const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
@@ -9,46 +8,44 @@ const RegisterScreen = ({ navigation }) => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [name, setName] = useState('');
 
-const handleRegister = async () => {
+  const handleRegister = async () => {
     console.log('Register button pressed');
-  
+    
     // Basic validation
     if (!email || !password || !confirmPassword || !name) {
       Alert.alert('Error', 'Please fill all fields.');
       return;
     }
-  
+    
     if (password !== confirmPassword) {
       Alert.alert('Error', 'Passwords do not match.');
       return;
     }
-  
-    // Log the data before sending the request
-    const id = "1234";
-    console.log({ id, name, email, password });
-  
+
+    // Auto-generate id
+    const id = Math.floor(10000 + Math.random() * 90000);
+
+    // The request body to send
+    const requestBody = {
+      id, 
+      name, 
+      email, 
+      password
+    };
+
+    console.log('Request Body:', requestBody);
+    
     try {
-      const response = await fetch('https://sanskriti-viharah.onrender.com/memberapi/signup', {
+      const response = await fetch('https://sanskriti-viharah.onrender.com/memberapi/singup', {
         method: 'POST',
-        body: JSON.stringify({ id, name, email, password }),
+        body: JSON.stringify(requestBody),
         headers: { 'Content-Type': 'application/json' },
       });
-  
-      // Log raw response
-      const textResponse = await response.text();
-      console.log('Raw Response:', textResponse);
-  
-      // Attempt to parse response as JSON
-      let data;
-      try {
-        data = JSON.parse(textResponse);
-      } catch (jsonError) {
-        console.error('JSON Parse Error:', jsonError);
-        Alert.alert('Error', 'Failed to parse server response.');
-        return;
-      }
-  
-      // Handle response based on the status
+      
+      const data = await response.json();
+      console.log('Server Response:', data);
+      
+      // Handle response based on status
       if (response.ok) {
         Alert.alert('Success', 'Registration successful!');
         navigation.navigate('Login');

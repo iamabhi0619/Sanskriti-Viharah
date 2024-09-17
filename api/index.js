@@ -2,11 +2,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const memberRouts = require("./routes/member")
+const cors = require("cors");
 const dotenv = require("dotenv");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(bodyParser.json());
+app.use(cors());
 
 async function main() {
   await mongoose.connect(

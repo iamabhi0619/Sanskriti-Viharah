@@ -9,7 +9,7 @@ import RegisterScreen from './components/register';
 // import CultureScreen from './components/CultureScreen';
 // import GuideBookingScreen from './components/GuideBookingScreen';
 // import ProfileScreen from './components/ProfileScreen';
-import { Ionicons } from '@expo/vector-icons'; 
+// import { Ionicons } from '@expo/vector-icons'; 
 
 // Stack and Tab Navigators
 const Stack = createStackNavigator();
